@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+          background-color: rgb(240, 235, 235);
+        }
+        img{
+          position: fixed;
+          height: 700px;
+          width: 500px;
+          bottom: 0;
+          
+          
+        }
+        form {
+          background-color: white;
+          padding: 20px 50px;
+          margin: 10px 0;
+          width: 400px;
+          height: 400px;
+          border-radius: 5px;
+          letter-spacing: 1px;
+        }
+        h2 {
+          font-family: Arial;
+          text-align: center;
+        }
+        div {
+          padding-bottom: 30px;
+        }
+        div > input {
+          width: 100%;
+          padding: 15px 15px;
+          margin: 5px 0;
+          border: 1px solid rgb(194, 189, 189);
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+        div > label {
+          font-family: Arial;
+          font-size: 85%;
+          font-weight: bold;
+          color: rgb(85, 78, 78);
+        }
+        div > label::after {
+          content: "*";
+          color: red;
+        }
+        label[for="checkbox"] {
+          text-decoration: underline;
+          font-family: Arial;
+          font-size: 85%;
+        }
+  
+        button {
+          width: 100%;
+          font-weight: bold;
+          background-color: rgb(31, 83, 187);
+          color: white;
+          padding: 15px 20px;
+          margin: 20px 0;
+          border: none;
+          border-radius: 4px;
+        }
+        button:hover {
+          background-color: green;
+        }
+        label[for="checkbox"]:hover {
+          color: blue;
+        }
+      </style>
+    </head>
+    <body>
+      <div>
+        <div class="split left">
+          
+            <img class="pic" src="schlumberger.webp" alt="">
+        </div>
+        
+
+
+        <!--login form-->
+        <div class="split right">
+          <div class="centered">
+      <form action="dashb.html" method="get" target="_blank">
+        <h2>
+          Login
+        </h2>
+        <div>
+          
+          <input
+            type="email"
+            id="userId"
+            name="userName"
+            placeholder="Username*"
+            required
+          />
+        </div>
+        <div>
+          <input type="password" id="pass" name="parola" placeholder="Password*" required />
+        </div>
+        <input type="checkbox" id="checkbox" name="checkAccount"  />
+        <label for="checkbox">Remember me</label>
+        <br />
+        <button type="submit"><a href="dashb.html"></a>LOG IN</button>
+      </form>
+      </div>
+      </div>
+      
+      
+         
+      </div>
+
+    </body>
+</html>
